@@ -1,0 +1,99 @@
+// Global font
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Stop scroll on mobile
+  @include breakpoint-down(small) {
+    overflow-y: hidden;
+  }
+}
+
+h1,
+h2,
+p {
+  margin: 1rem 0rem;
+}
+
+h1 {
+  font-size: 5rem;
+
+  @include breakpoint-down(small) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 2.7rem;
+  @include breakpoint-down(small) {
+    font-size: 2rem;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+select {
+  border: 2px solid $darkBlue;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  outline: none;
+
+  &:hover {
+    border: 2px solid $lighterBlue;
+  }
+}
+
+button {
+  border: 2px solid $darkBlue;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  outline: none;
+  background: white;
+
+  &:hover {
+    color: $darkBlue;
+    border: 2px solid $lighterBlue;
+  }
+}
+
+input {
+  border: 2px solid $gray;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  outline: none;
+
+  &:hover {
+    border: 2px solid $darkGray;
+  }
+
+  &:focus {
+    border: 2px solid black;
+  }
+}

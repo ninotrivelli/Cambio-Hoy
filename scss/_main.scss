@@ -1,1 +1,42 @@
-// https://api.exchangerate-api.com/v4/latest/${currentCurrency1}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint-down(small) {
+    padding: 3rem;
+  }
+}
+
+.logo-container img {
+  max-width: 300px;
+}
+
+.exchange-container {
+  width: 100%;
+  max-width: 400px;
+
+  &__input {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+
+    input {
+      width: 70%;
+      text-align: right;
+      font-size: 1.8rem;
+      padding: 4px;
+    }
+  }
+
+  &__swap {
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+
+    .rate {
+      font-size: 1.5rem;
+    }
+  }
+}

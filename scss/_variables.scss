@@ -1,0 +1,18 @@
+// Colors
+$darkBlue: rgb(0, 98, 176);
+$lighterBlue: rgb(94, 160, 214);
+$darkGray: rgb(109, 109, 109);
+$gray: rgb(194, 194, 194);
+
+$breakpoints-down: (
+  small: 639px,
+  medium: 1023px,
+  large: 1399px,
+);
+
+// If [device width] is less than or equal to X px, then do
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down , $size )) {
+    @content;
+  }
+}

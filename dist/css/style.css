@@ -1,1 +1,149 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 639px) {
+  body {
+    overflow-y: hidden;
+  }
+}
+
+h1,
+h2,
+p {
+  margin: 1rem 0rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+@media (max-width: 639px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+@media (max-width: 639px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+select {
+  border: 2px solid #0062b0;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+select:hover {
+  border: 2px solid #5ea0d6;
+}
+
+button {
+  border: 2px solid #0062b0;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  outline: none;
+  background: white;
+}
+
+button:hover {
+  color: #0062b0;
+  border: 2px solid #5ea0d6;
+}
+
+input {
+  border: 2px solid #c2c2c2;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+input:hover {
+  border: 2px solid #6d6d6d;
+}
+
+input:focus {
+  border: 2px solid black;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 639px) {
+  .app-container {
+    padding: 3rem;
+  }
+}
+
+.logo-container img {
+  max-width: 300px;
+}
+
+.exchange-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.exchange-container__input {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.exchange-container__input input {
+  width: 70%;
+  text-align: right;
+  font-size: 1.8rem;
+  padding: 4px;
+}
+
+.exchange-container__swap {
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+}
+
+.exchange-container__swap .rate {
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */
