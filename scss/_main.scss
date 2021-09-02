@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
 
+  span {
+    color: $darkBlue;
+  }
+
   @include breakpoint-down(small) {
     padding: 3rem;
   }

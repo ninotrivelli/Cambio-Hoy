@@ -109,6 +109,10 @@ input:focus {
   align-items: center;
 }
 
+.app-container span {
+  color: #0062b0;
+}
+
 @media (max-width: 639px) {
   .app-container {
     padding: 3rem;
