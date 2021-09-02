@@ -21,12 +21,6 @@ body {
   align-items: center;
 }
 
-@media (max-width: 639px) {
-  body {
-    overflow-y: hidden;
-  }
-}
-
 h1,
 h2,
 p {
@@ -121,6 +115,12 @@ input:focus {
 
 .logo-container img {
   max-width: 300px;
+}
+
+@media (max-width: 639px) {
+  .logo-container img {
+    max-width: 250px;
+  }
 }
 
 .exchange-container {
